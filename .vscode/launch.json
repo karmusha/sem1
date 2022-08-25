@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "sem1",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem1",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/sem1/bin/Debug/net6.0/sem1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem1",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "dz1",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz1",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/dz1/bin/Debug/net6.0/dz1.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz1",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+    ]
+}
