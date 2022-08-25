@@ -3,7 +3,7 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Напишите первое число");
+{Console.WriteLine("Напишите первое число");
 
 var read = Console.ReadLine();
 var a = Convert.ToInt32(read);
@@ -26,7 +26,7 @@ else
     max = b;
     Console.WriteLine("Максимальное число: ");
     Console.WriteLine(max);
-}
+}}
 
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -34,10 +34,61 @@ else
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
+{Console.WriteLine("Напишите первое число");
+var read = Console.ReadLine();
+var a = Convert.ToInt32(read);
+
+Console.WriteLine("Напишите второе число");
+read = Console.ReadLine();
+var b = Convert.ToInt32(read);
+
+Console.WriteLine("Напишите третье число");
+read = Console.ReadLine();
+var c = Convert.ToInt32(read);
+
+int max;
+
+if (a > b && a > c) 
+{
+    max = a;
+    Console.WriteLine("Максимальное число: ");
+    Console.WriteLine(max);
+
+} 
+else if (b > a && b > c)
+{
+    max = b;
+    Console.WriteLine("Максимальное число: ");
+    Console.WriteLine(max);
+}
+else 
+{
+    max = c;
+    Console.WriteLine("Максимальное число: ");
+    Console.WriteLine(max);
+}}
+
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 // 4 -> да
 // -3 -> нет
 // 7 -> нет
+
+{Console.WriteLine("Напишите число: ");
+
+var read = Console.ReadLine();
+var a = Convert.ToInt32(read);
+var dev = a % 2;
+
+if (dev == 0) 
+{
+    Console.WriteLine("{0} - чётное число", a);
+} 
+else 
+{
+    Console.WriteLine(a);
+    Console.WriteLine("{0} - нечётное число", a);
+}}
+
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 // 5 -> 2, 4
