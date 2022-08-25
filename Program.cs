@@ -3,12 +3,12 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-{Console.WriteLine("Напишите первое число");
+{Console.WriteLine("Напишите первое число: ");
 
 var read = Console.ReadLine();
 var a = Convert.ToInt32(read);
 
-Console.WriteLine("Напишите второе число");
+Console.WriteLine("Напишите второе число: ");
 
 read = Console.ReadLine();
 var b = Convert.ToInt32(read);
@@ -34,15 +34,15 @@ else
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-{Console.WriteLine("Напишите первое число");
+{Console.WriteLine("Напишите первое число: ");
 var read = Console.ReadLine();
 var a = Convert.ToInt32(read);
 
-Console.WriteLine("Напишите второе число");
+Console.WriteLine("Напишите второе число: ");
 read = Console.ReadLine();
 var b = Convert.ToInt32(read);
 
-Console.WriteLine("Напишите третье число");
+Console.WriteLine("Напишите третье число: ");
 read = Console.ReadLine();
 var c = Convert.ToInt32(read);
 
@@ -94,7 +94,22 @@ else
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
+{Console.WriteLine("Напишите число: ");
 
+var read = Console.ReadLine();
+var N = Convert.ToInt32(read);
+var count = 1;
+
+while (count <= N)
+{
+    var dev = count % 2;
+    if (dev == 0)
+    { 
+        Console.WriteLine(count);
+    }
+    count++;
+}
+}
 
 
 
