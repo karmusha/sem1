@@ -49,5 +49,17 @@
             ],
             "problemMatcher": "$msCompile"
         },
+        {
+            "label": "build_lec3methods",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/lec3methods/lec3methods.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
     ]
 }

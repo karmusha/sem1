@@ -45,5 +45,16 @@
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
+        {
+            "name": "lec3methods",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_lec3methods",
+            "program": "${workspaceFolder}/lec3methods/bin/Debug/net6.0/lec3methods.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/lec3methods",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
     ]
 }
