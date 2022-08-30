@@ -24,6 +24,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "sem3",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem3",
+            "program": "${workspaceFolder}/sem3/bin/Debug/net6.0/sem3.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem3",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "dz1",
             "type": "coreclr",
             "request": "launch",
