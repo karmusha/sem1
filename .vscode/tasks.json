@@ -38,6 +38,18 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "build_dz1",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/dz1/dz1.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build_dz2",
             "command": "dotnet",
             "type": "process",
@@ -50,12 +62,12 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build_dz1",
+            "label": "build_dz3",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/dz1/dz1.csproj",
+                "${workspaceFolder}/dz3/dz3.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

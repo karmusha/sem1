@@ -130,34 +130,57 @@
 // A (3, 6); B (2, 1) -> 5,09
 // A (7, -5); B (1, -1) -> 7,21
 
+// {
+//     Console.WriteLine("Введите координату X точки A:");
+//     bool isNumberXA = int.TryParse(Console.ReadLine(), out int xa);
+
+//     Console.WriteLine("Введите координату Y точки A:");
+//     bool isNumberYA = int.TryParse(Console.ReadLine(), out int ya);
+
+//     Console.WriteLine("Введите координату X точки B:");
+//     bool isNumberXB = int.TryParse(Console.ReadLine(), out int xb);
+
+//     Console.WriteLine("Введите координату Y точки B:");
+//     bool isNumberYB = int.TryParse(Console.ReadLine(), out int yb);
+
+//     if (!isNumberXA || !isNumberYA || isNumberXB != true || isNumberYB != true)
+//     {
+//         Console.WriteLine("Числа введены не верно.");
+//         return;
+//     }
+
+//     double CalcDistance(int xa, int ya, int xb, int yb)
+//     {
+//         return Math.Sqrt(Math.Pow((xb - xa),2) + Math.Pow((yb - ya),2));
+//     }
+
+//     double result = CalcDistance(xa, ya, xb, yb);
+//     Console.WriteLine(result);
+// }
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
+// 5 -> 1, 4, 9, 16, 25.
+// 2 -> 1, 4.
+
+Console.WriteLine("Введите число");
+bool isNumber = int.TryParse(Console.ReadLine(), out int to);
+
+int[] CreateSequenceOfSquareOfNumbers(int from, int to)
 {
-    Console.WriteLine("Введите координату X точки A:");
-    bool isNumberXA = int.TryParse(Console.ReadLine(), out int xa);
-
-    Console.WriteLine("Введите координату Y точки A:");
-    bool isNumberYA = int.TryParse(Console.ReadLine(), out int ya);
-
-    Console.WriteLine("Введите координату X точки B:");
-    bool isNumberXB = int.TryParse(Console.ReadLine(), out int xb);
-
-    Console.WriteLine("Введите координату Y точки B:");
-    bool isNumberYB = int.TryParse(Console.ReadLine(), out int yb);
-
-    if (isNumberXA != true || isNumberYA != true || isNumberXB != true || isNumberYB != true)
+    int length = to-from+1;
+    int[] res = new int[length];
+    for (int i = 0; i < res.Length; i++)
     {
-        Console.WriteLine("Числа введены не верно.");
-        return;
+        res[i] = from * from;
+        from++;
     }
+    return res;
+}
 
-    double CalcDistance(int xa, int ya, int xb, int yb)
-    {
-        int x = xb - xa;
-        int y = yb - ya;
-        double sum = Math.Pow(x,2) + Math.Pow(y,2);
-        double distance = Math.Sqrt(sum);
-        return distance;
-    }
-
-    double result = CalcDistance(xa, ya, xb, yb);
-    Console.WriteLine(result);
+int[] squares = CreateSequenceOfSquareOfNumbers(1, to);
+for (int i = 0; i < squares.Length; i++)
+{
+    Console.Write(squares[i]);
+    if (i < squares.Length - 1)
+        Console.Write(", ");
 }

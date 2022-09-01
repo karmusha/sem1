@@ -57,6 +57,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "dz3",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz3",
+            "program": "${workspaceFolder}/dz3/bin/Debug/net6.0/dz3.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz3",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "lec3methods",
             "type": "coreclr",
             "request": "launch",
