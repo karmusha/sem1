@@ -35,6 +35,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "sem4",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem4",
+            "program": "${workspaceFolder}/sem4/bin/Debug/net6.0/sem4.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem4",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "dz1",
             "type": "coreclr",
             "request": "launch",
@@ -64,6 +75,28 @@
             "program": "${workspaceFolder}/dz3/bin/Debug/net6.0/dz3.dll",
             "args": [],
             "cwd": "${workspaceFolder}/dz3",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "dz4",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz4",
+            "program": "${workspaceFolder}/dz4/bin/Debug/net6.0/dz4.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz4",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "lec3methods",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_lec3methods",
+            "program": "${workspaceFolder}/lec3methods/bin/Debug/net6.0/lec3methods.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/lec3methods",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
