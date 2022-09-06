@@ -46,6 +46,28 @@
             "stopAtEntry": false
         },
         {
+            "name": "amazon",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_amazon",
+            "program": "${workspaceFolder}/amazon/bin/Debug/net6.0/amazon.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/amazon",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "sem5",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem5",
+            "program": "${workspaceFolder}/sem5/bin/Debug/net6.0/sem5.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem5",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "dz1",
             "type": "coreclr",
             "request": "launch",
