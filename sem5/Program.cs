@@ -271,7 +271,7 @@ void Task35() // Задача 35. Задайте одномерный масси
         int count = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if (array[i] > 10 && array[i] < 100)
+            if (array[i] >= 10 && array[i] <=99)
             {
                 count++;
             }
@@ -282,17 +282,70 @@ void Task35() // Задача 35. Задайте одномерный масси
 
 //Task35(); // Раскомментируйте строку, чтобы посмотреть решение задачи 35 к семинару 5.
 
-void Task37() // Найдите произведение пар чиселв одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+void Task37() // Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 {
+Console.WriteLine("Введите длину массива:");
+bool isNumber = int.TryParse(Console.ReadLine(), out int length);
 
-
-
-
-
-
-
+if (!isNumber || length <= 1){
+    Console.WriteLine("Вы ввели неверную длину массива.");
+    return;
 }
 
-//Task37(); // Раскомментируйте строку, чтобы посмотреть решение задачи 37 к семинару 5.
+int[] array = new int[length];
+FillArray(array, length);
+string printArray = ArrayToString(array);
+Console.WriteLine(printArray);
+
+void FillArray(int[] array, int length)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Random random = new Random();
+        array[i] = random.Next(1, 11);
+    }
+}
+
+string ArrayToString(int[] array)
+{
+    string res = "[";
+    
+    for (int i = 0; i < array.Length; i++)
+    {
+        res += array[i].ToString();
+
+        if (i != array.Length - 1)
+        {
+            res += ", ";
+        }
+    }
+
+    res += "]";
+
+    return res;
+}
+
+int[] ProdOfPairs(int[] array)
+{
+    int len = Convert.ToInt32(Math.Ceiling(array.Length/2.0));
+
+    int[] res = new int[len];
+
+    for (int i = 0; i < len; i++)
+    {
+        int j = array.Length - 1 - i;
+        int prod = array[i] * array[j];
+        res[i] = prod;
+    }
+    return res;
+}
+
+
+int[] result = ProdOfPairs(array);
+string resultSrting = ArrayToString(result);
+Console.WriteLine(resultSrting);
+}
+
+Task37(); // Раскомментируйте строку, чтобы посмотреть решение задачи 37 к семинару 5.
