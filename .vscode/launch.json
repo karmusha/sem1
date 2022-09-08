@@ -112,6 +112,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "dz5",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz5",
+            "program": "${workspaceFolder}/dz5/bin/Debug/net6.0/dz5.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz5",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "lec3methods",
             "type": "coreclr",
             "request": "launch",
