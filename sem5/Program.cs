@@ -295,11 +295,11 @@ if (!isNumber || length <= 1){
 }
 
 int[] array = new int[length];
-FillArray(array, length);
+FillArray(array);
 string printArray = ArrayToString(array);
 Console.WriteLine(printArray);
 
-void FillArray(int[] array, int length)
+void FillArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -341,7 +341,6 @@ int[] ProdOfPairs(int[] array)
     }
     return res;
 }
-
 
 int[] result = ProdOfPairs(array);
 string resultSrting = ArrayToString(result);
