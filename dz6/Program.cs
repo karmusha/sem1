@@ -92,6 +92,20 @@ void Task43() // Задача 43: Напишите программу, кото�
         return;
     }
 
+    if (k1 == k2)
+    {
+        if (b1 == b2)
+        {
+            Console.WriteLine("Прямые совпадают.");
+            return;
+        }
+        else
+        {
+            Console.WriteLine("Прямые параллельны.");
+            return;
+        }
+    }
+
     (double, double) GetXY(int b2, int b1, int k1, int k2)
     {
         double x = (b2 - b1) / (double)(k1 - k2);
