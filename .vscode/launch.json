@@ -79,6 +79,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "sem7",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem7",
+            "program": "${workspaceFolder}/sem7/bin/Debug/net6.0/sem7.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem7",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "dz1",
             "type": "coreclr",
             "request": "launch",
@@ -141,6 +152,17 @@
             "program": "${workspaceFolder}/dz6/bin/Debug/net6.0/dz6.dll",
             "args": [],
             "cwd": "${workspaceFolder}/dz6",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "dz7",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz7",
+            "program": "${workspaceFolder}/dz7/bin/Debug/net6.0/dz7.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz7",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },

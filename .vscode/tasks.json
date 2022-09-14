@@ -74,6 +74,18 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "build_sem7",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/sem7/sem7.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build_amazon",
             "command": "dotnet",
             "type": "process",
@@ -152,6 +164,18 @@
             "args": [
                 "build",
                 "${workspaceFolder}/dz6/dz6.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build_dz7",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/dz7/dz7.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
