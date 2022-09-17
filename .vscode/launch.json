@@ -90,6 +90,28 @@
             "stopAtEntry": false
         },
         {
+            "name": "sem8",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem8",
+            "program": "${workspaceFolder}/sem8/bin/Debug/net6.0/sem8.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem8",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "sem9",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_sem9",
+            "program": "${workspaceFolder}/sem9/bin/Debug/net6.0/sem9.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sem9",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "dz1",
             "type": "coreclr",
             "request": "launch",
@@ -167,6 +189,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "dz8",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz8",
+            "program": "${workspaceFolder}/dz8/bin/Debug/net6.0/dz8.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz8",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "lec3methods",
             "type": "coreclr",
             "request": "launch",
@@ -196,6 +229,17 @@
             "program": "${workspaceFolder}/lec4recursion/bin/Debug/net6.0/lec4recursion.dll",
             "args": [],
             "cwd": "${workspaceFolder}/lec4recursion",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "lec6",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_lec6",
+            "program": "${workspaceFolder}/lec6/bin/Debug/net6.0/lec6.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/lec6",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
