@@ -98,12 +98,12 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build_sem9",
+            "label": "build_sem99",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/sem9/sem9.csproj",
+                "${workspaceFolder}/sem99/sem99.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -218,6 +218,18 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "build_dz9",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/dz9/dz9.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build_lec3methods",
             "command": "dotnet",
             "type": "process",
@@ -236,18 +248,6 @@
             "args": [
                 "build",
                 "${workspaceFolder}/lec4recursion/lec4recursion.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build_lec6",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/lec6/lec6.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

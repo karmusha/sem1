@@ -61,48 +61,48 @@ bool FindDuplicates(int[,,] array, int x, int y, int z)
     return false;
 }
 
-// int[,] Fill2DArray(int a)
-// {
-//     int[,] res = new int[a, a];
-//     int size = res.GetLength(0);
-//     int number = 1;
-//     while (size > 0)
-//     {
-//         for (int i = 0; i < size; i++)
-//         {
-//             for (int j = 0; j < size; j++)
-//             {
-//                 res[i, j] = number;
-//                 number++;
-//                 if (j == size-1)
-//                 {
-//                     size--;
-//                     for (int k = i + 1; k <= size; k++)
-//                     {
-//                         res[k, j] = number;
-//                         number++; 
-//                     }
-//                     int m = i + size;
-//                     for (int l = j-1; l >= 0; l--)
-//                     {
-//                         res[m, l] = number;
-//                         number++;
-//                         if (l == 0)
-//                         {
-//                             size--;
-//                             for (int p = m-1; p > 0 ; p--)
-//                             {
-//                                 res[p, l] = number;
-//                                 number++;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     return res;
-// }
+int[,] Fill2DArray(int a)
+{
+    int[,] res = new int[a, a];
+    int size = res.GetLength(0);
+    int number = 1;
+    while (size > 0)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+                res[i, j] = number;
+                number++;
+                if (j == size-1)
+                {
+                    size--;
+                    for (int k = i + 1; k <= size; k++)
+                    {
+                        res[k, j] = number;
+                        number++; 
+                    }
+                    int m = i + size;
+                    for (int l = j-1; l >= 0; l--)
+                    {
+                        res[m, l] = number;
+                        number++;
+                        if (l == 0)
+                        {
+                            size--;
+                            for (int p = m-1; p > 0 ; p--)
+                            {
+                                res[p, l] = number;
+                                number++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return res;
+}
 
 void Print2DArray(int[,] array)
 {
@@ -226,7 +226,7 @@ int[,] FindProductOfTwoArrays(int[,] array1, int[,] array2)
 // 9 5 3 2
 // 8 4 4 2
 
-Console.WriteLine("Введите длину массива");
+/*Console.WriteLine("Введите длину массива");
 bool isNumberM = int.TryParse(Console.ReadLine(), out int m);
 
 Console.WriteLine("Введите ширину массива");
@@ -241,7 +241,7 @@ int[,] array54 = CreateCustomArray(m,n);
 Print2DArray(array54);
 Console.WriteLine();
 int[,] result54 = SortDescendinInRows(array54);
-Print2DArray(result54);
+Print2DArray(result54);*/
 
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -252,7 +252,7 @@ Print2DArray(result54);
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-Console.WriteLine("Введите длину/ширину массива");
+/*Console.WriteLine("Введите длину/ширину массива");
 bool isNumberSize = int.TryParse(Console.ReadLine(), out int size);
 if (!isNumberSize || size < 1)
 {
@@ -279,8 +279,7 @@ int[,] array581 = CreateCustomArray(size,size);
 int[,] array582 = CreateCustomArray(size,size);
 Print2DArray(array581);
 Console.WriteLine();
-Print2DArray(array582);
-
+Print2DArray(array582);*/
 // int[,] array581 = new int[,]
 // {
 //     {2,4},
@@ -293,10 +292,10 @@ Print2DArray(array582);
 //     {3,4},
 //     {3,3}
 // };
-
+/*
 Console.WriteLine();
 int[,] result58 = FindProductOfTwoArrays(array581, array582);
-Print2DArray(result58);
+Print2DArray(result58);*/
 
 
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -306,8 +305,107 @@ Print2DArray(result58);
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int x=2,y=2,z=2;
+// int x=2,y=2,z=2;
 
-int[,,] array60 = Fill3DArray(x,y,z);
-Print3DArray(array60);
+// int[,,] array60 = Fill3DArray(x,y,z);
+// Print3DArray(array60);
 
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+
+
+/*// Кусерявый код
+int[,] fill_array(int dimension) {
+    int[,] res = new int[dimension, dimension]; 
+    int total_numbers = dimension * dimension;
+    int current_size = dimension;
+    int start_x = 0, start_y = 0;
+    int number = 1;
+
+    while(number <= total_numbers) {
+        var (x, y) = find_x_and_y(number, start_x, start_y, current_size);
+        res[x, y] =  number;
+        number++;
+
+        start_x++;
+        start_y++;
+        current_size = (current_size - 2);
+    }
+    // for(int number = 0; number <= total_numbers; number++) {
+    //     var (x, y) = find_x_and_y(res, start_x, start_y, current_size);
+
+    //     res[x, y] = number;
+
+    //     current_size = (current_size - 2);
+    // }
+
+    return res;
+}
+
+int find_direction(int current_size) {
+
+}
+
+((int, int), int) find_circle_index(int number, int offset, int current_size, int current_circle = 0) {
+    int current_numbers = (current_size-1) * 4;
+
+    if (current_numbers <= 0) {
+        return ((current_circle+1, current_circle+1), current_size);
+    }
+
+    int number_index = number-1;
+    if (offset + current_numbers > number_index) {
+        number_index = number_index - offset;
+        int center = current_size / 2;
+        
+        int x_direction = 1;
+        if (number_index >= center) {
+            x_direction = -1;
+        }
+
+        int x_point = current_circle + (x_direction * );
+
+        int y_direction = 1;
+        if (number_index < center) {
+            y_direction = -1;
+        }
+
+        return ((current_circle, current_circle), current_size);
+    }
+
+    current_size -= 2;
+    offset += current_numbers;
+    current_circle++;
+
+    return find_circle_index(number, offset, current_size, current_circle);
+}
+
+
+
+
+(int, int) find_x_and_y(int number, int start_x, int start_y, int size) {
+
+    return (0, 0);
+}
+
+int a = 4;
+int square_side_items = 5;
+int total_numbers = square_side_items * square_side_items;
+var r = new Random();
+// int check_for_circle = r.Next(1, total_numbers+1);
+int check_number = 19;
+// Console.WriteLine($"{find_circle_index(7, 0, square_side_items)}");
+// Console.WriteLine($"{find_circle_index(13, 0, square_side_items)}");
+// Console.WriteLine($"{find_circle_index(21, 0, square_side_items)}");
+Console.WriteLine($"number {check_number} in {find_circle_index(check_number-1, 0, square_side_items)} circle");
+// int[,] array62 = fill_array(a);
+// Print2DArray(array62);
+
+// int a = 4;
+// int[,] array62 = Fill2DArray(a);
+// Print2DArray(array62);
+*/

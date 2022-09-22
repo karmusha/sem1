@@ -101,13 +101,13 @@
             "stopAtEntry": false
         },
         {
-            "name": "sem9",
+            "name": "sem99",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build_sem9",
-            "program": "${workspaceFolder}/sem9/bin/Debug/net6.0/sem9.dll",
+            "preLaunchTask": "build_sem99",
+            "program": "${workspaceFolder}/sem99/bin/Debug/net6.0/sem99.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/sem9",
+            "cwd": "${workspaceFolder}/sem99",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
@@ -200,6 +200,17 @@
             "stopAtEntry": false
         },
         {
+            "name": "dz9",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_dz9",
+            "program": "${workspaceFolder}/dz9/bin/Debug/net6.0/dz9.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dz9",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "lec3methods",
             "type": "coreclr",
             "request": "launch",
@@ -229,17 +240,6 @@
             "program": "${workspaceFolder}/lec4recursion/bin/Debug/net6.0/lec4recursion.dll",
             "args": [],
             "cwd": "${workspaceFolder}/lec4recursion",
-            "console": "integratedTerminal",
-            "stopAtEntry": false
-        },
-        {
-            "name": "lec6",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build_lec6",
-            "program": "${workspaceFolder}/lec6/bin/Debug/net6.0/lec6.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/lec6",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
